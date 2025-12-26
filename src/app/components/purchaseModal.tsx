@@ -85,7 +85,7 @@ function PurchaseModal({
 
   if (showConfirmation) {
     return (
-      <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-[1000]">
+      <div className="fixed inset-0 bg-black flex justify-center items-center z-[1000]">
         <div className="bg-[#18181B] flex flex-col gap-y-4 border-solid outline outline-[#27272A] p-8 w-[448px] text-center">
           <div>
           <span className="material-symbols-rounded !text-[64px] font-bold text-[#00C950]">task_alt</span>
@@ -130,7 +130,7 @@ function PurchaseModal({
   }
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-[1000]"onClick={onClose}>
+    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex justify-center items-center z-[1000]"onClick={onClose}>
 
         <div className="flex flex-col gap-y-4 bg-[#18181a] p-7 w-[448px] w-[90%] border-solid outline outline-[#27272A]" onClick={(e) => e.stopPropagation()}>
         
