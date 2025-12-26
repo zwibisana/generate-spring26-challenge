@@ -127,7 +127,7 @@ function App() {
                   </div>
                 </div>
 
-                <div className="bg-[#09090B] flex justify-between p-[12px] outline border-solid outline-[#27272A]">
+                <div className="bg-[#09090B] flex items-center justify-between p-[12px] outline border-solid outline-[#27272A]">
                   <div>
                     <p className="text-left text-[18px] font-bold text-[#FF6467]">${item.item_price.toLocaleString()}</p>
                     <div className="flex items-center gap-1 text-[#71717B]"><span className="material-symbols-rounded !text-[16px]">trending_up</span>
