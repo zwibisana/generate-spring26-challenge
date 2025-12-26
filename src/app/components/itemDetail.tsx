@@ -42,20 +42,33 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
 
         {/* Left side: Image + Review */}
         <div className="flex flex-col items-center md:items-start gap-4">
-            <img 
-            src={item.item_photo_url} 
-            alt={item.item_name} 
-            className="w-full h-auto object-cover rounded-md"
-            />
+            <div className="relative w-full max-w-[400px]">
+                <img 
+                    src={item.item_photo_url} 
+                    alt={item.item_name} 
+                    className="w-full h-auto object-cover border-solid outline outline-[#27272A]"
+                />
+
+                {/* Verified badge */}
+                <div className="absolute top-2 right-2">
+                    <div className="flex flex-row h-[26px] px-2 text-[12px] items-center text-center text-[#00C950] bg-[#262729] border-solid outline outline-[#27272A]"><span className="material-symbols-rounded !text-[24px] text-[#00C950]">check_small</span>VERIFIED</div>
+                </div>
+            </div>
 
             {/* Review */}
             <div className="text-[#71717B] text-[14px] text-center md:text-left">
-            This is an amazing product!
+                <div>
+                    <span className="material-symbols-rounded !text-[14px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>
+                    <span className="material-symbols-rounded !text-[14px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>
+                    <span className="material-symbols-rounded !text-[14px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>
+                    <span className="material-symbols-rounded !text-[14px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>
+                    <span className="material-symbols-rounded !text-[14px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>
+                </div>
             </div>
         </div>
 
         {/* Right side: Information */}
-        <div className="flex-1 min-w-[300px] flex flex-col gap-6">
+        <div className="flex-1 min-w-[350px] flex flex-col gap-6">
             <div className="flex flex-col gap-y-3 p-6 bg-[#18181B] border-solid outline outline-[#27272A]">
                 <h1 className="uppercase text-[24px] font-bold">{item.item_name}</h1>
                 <div className="flex-row flex gap-x-3">
@@ -66,14 +79,46 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
                 <p className="text-[14px] text-[#9F9FA9]">{item.item_description}</p>
             </div>
 
-            <div className="bg-[#18181B] p-4 border-solid outline outline-[#27272A]">
-                <div className="flex flex-row justify-between pb-6 border-b border-solid border-b-[#27272A]">
+            <div className="bg-[#18181B] p-4 border-solid outline outline-[#27272A] flex flex-col gap-y-4">
+                <div className="flex flex-row items-center justify-between pb-6 border-b border-solid border-b-[#27272A]">
                     <p className="text-[14px] text-[#71717B]">PRICE:</p>
                     <div>
-                        <p className="text-left text-[18px] font-bold text-[#FF6467]">${item.item_price.toLocaleString()}</p>
-                        <p className="text-[12px] text-[#52525C]">LOWEST ON MARKET</p>
+                        <p className="text-left text-[30px] font-bold text-[#FF6467]">${item.item_price.toLocaleString()}</p>
+                        <p className="text-[12px] text-[#52525C] text-right">LOWEST ON MARKET</p>
                     </div>
                 </div>
+
+                <div className="flex flex-row gap-x-4 items-center bg-[#09090B] p-3 border-solid outline outline-[#27272A]">
+                    <div><span className="material-symbols-rounded !text-[20px] text-[#52525C]">person</span></div>
+                    <div>
+                        <p className="text-[12px] text-[#52525C] uppercase">SELLER:</p>
+                        <p className="text-[14px]">{item.seller_username}</p>
+                        <p className="text-[12px] text-[#F0B100]">⭐⭐⭐⭐⭐ 100% POSITIVE</p>
+                    </div>
+                </div>
+
+                <div className="flex flex-row gap-x-4 items-center bg-[#09090B] p-3 border-solid outline outline-[#27272A]">
+                    <div><span className="material-symbols-rounded !text-[20px] text-[#52525C]">location_on</span></div>
+                    <div>
+                        <p className="text-[12px] text-[#52525C] uppercase">SHIPS FROM:</p>
+                        <p className="text-[14px]">{item.seller_city}, {item.seller_country}</p>
+                    </div>
+                </div>
+
+                <div className="flex flex-row gap-x-4 items-center bg-[#09090B] p-3 border-solid outline outline-[#27272A]">
+                    <div><span className="material-symbols-rounded !text-[20px] text-[#52525C]">location_on</span></div>
+                    <div>
+                        <p className="text-[12px] text-[#52525C] uppercase">IN STOCK:</p>
+                        <p className="text-[18px] font-bold text-[#FF6467]">ONLY {item.item_stock} LEFT</p>
+                    </div>
+                </div>
+                
+                <div className="flex gap-4">
+                    <div className="flex flex-col text-[12px] w-full p-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]"><span className="material-symbols-rounded !text-[24px] text-[#71717B]">shield</span>SECURE</div>
+                    <div className="flex flex-col text-[12px] w-full p-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]"><span className="material-symbols-rounded !text-[24px] text-[#71717B]">bolt</span>INSTANT</div>
+                    <div className="flex flex-col text-[12px] w-full p-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]"><span className="material-symbols-rounded !text-[24px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>RATED</div>
+                </div>
+
             </div>
 
             <button
