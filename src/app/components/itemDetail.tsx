@@ -20,7 +20,7 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
   };
 
   return (
-    <div>
+    <div className="mb-10">
       <div className="text-center text-[#71717B] bg-[#18181a] py-[6px] text-[12px] tracking-[0.3] font-medium border-solid outline outline-[#27272A]">
         <p>★ LIMITED TIME OFFER ★ ACT FAST ★ ONLY {item.item_stock} LEFT ★</p>
       </div>
@@ -127,7 +127,7 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
 
             <button
             onClick={handleBuyNow}
-            className="py-3 w-full text-[20px] font-bold bg-[#E7000B] text-white cursor-pointer"
+            className="py-4 w-full text-[20px] font-bold bg-[#E7000B] outline border-solid outline-[#FB2C36] text-white cursor-pointer hover:bg-[#C10007]"
             >
             ★ BUY NOW ★
             </button>
