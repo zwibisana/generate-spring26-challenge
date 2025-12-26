@@ -132,7 +132,7 @@ function PurchaseModal({
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex justify-center items-center z-[1000]"onClick={onClose}>
 
-        <div className="flex flex-col gap-y-4 bg-[#18181a] p-7 w-[448px] w-[90%] border-solid outline outline-[#27272A]" onClick={(e) => e.stopPropagation()}>
+        <div className="flex flex-col gap-y-4 bg-[#18181a] p-7 w-[448px] border-solid outline outline-[#27272A]" onClick={(e) => e.stopPropagation()}>
         
         <div className="flex flex-row justify-between items-center">
             <div className="flex flex-row gap-x-2">
