@@ -93,69 +93,88 @@ function PurchaseModal({
   }
 
   return (
-    <div
-      className="fixed inset-0 bg-black/50 flex justify-center items-center z-[1000]"
-      onClick={onClose}
-    >
-      <div
-        className="bg-black p-7 rounded-md max-w-[500px] w-[90%]"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <h2>{item_name}</h2>
-        <img
-          src={item_photo_url}
-          alt={item_name}
-          className="w-full h-48 object-cover rounded my-5"
-        />
-        <p>{item_description}</p>
-        <p><strong>Price:</strong> ${item_price.toLocaleString()}</p>
-        <p><strong>Stock Available:</strong> {item_stock}</p>
+    <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-[1000]"onClick={onClose}>
 
-        <div className="flex items-center gap-[15px]">
-          <label><strong>Quantity:</strong></label>
+        <div className="flex flex-col gap-y-4 bg-[#18181a] p-7 w-[448px] w-[90%] border-solid outline outline-[#27272A]" onClick={(e) => e.stopPropagation()}>
+        
+        <div className="flex flex-row justify-between items-center">
+            <div className="flex flex-row gap-x-2">
+                <span className="material-symbols-rounded !text-[24px] font-bold text-[#FF6467]">warning</span>
+            <p className="text-[18px] font-bold text-[#FF6467]">CHECKOUT</p>
+            </div>
+            <button
+                onClick={onClose}
+                className="group group-hover:outline-[#FFFFFF] duration-200 flex items-center justify-center bg-[#272729] p-3 border-solid outline outline-[#3F3F46] h-[42px] w-[42px]">
+                <span className="material-symbols-rounded !text-[24px] font-bold text-[#71717B] duration-200 group-hover:text-[#FFFFFF]">close</span>
+            </button>
+            </div>
+
+        <div className="mt-6 bg-[#460a08] py-2 border-solid outline outline-[#82181A] text-[#FF6467] text-[12px]">
+            <p className="text-center">★ LIMITED TIME OFFER ★</p>
+        </div>
+
+        <div className="bg-[#09090B] p-3 border-solid outline outline-[#27272A]">
+            <p className="text-[12px] text-[#52525C] uppercase">ITEM:</p>
+            <p className="text-[14px]">{item_name}</p>
+        </div>
+
+        <div className="bg-[#09090B] p-3 border-solid outline outline-[#27272A]">
+            <p className="text-[12px] text-[#52525C] uppercase">SELLER:</p>
+            <p className="text-[14px]">{seller_username}</p>
+            <p className="text-[12px] text-[#F0B100]">⭐⭐⭐⭐⭐ VERIFIED</p>
+        </div>
+
+        <div className="bg-[#09090B] p-3 border-solid outline outline-[#27272A]">
+            <p className="text-[12px] text-[#52525C] uppercase">SHIPPING FROM:</p>
+            <p className="text-[14px]">{seller_city}, {seller_country}</p>
+        </div>
+
+        <div className="flex flex-col items-left bg-[#09090B] p-3 border-solid outline outline-[#27272A]">
+        <label className="text-[12px] text-[#52525C] uppercase mb-2">QUANTITY:</label>
+         <div className="flex flex-row items-center gap-x-4">
           <button
             onClick={handleDecrease}
             disabled={quantity <= 1}
-            className={`py-1.5 px-4.5 text-lg 
-            ${quantity <= 1 ? "cursor-not-allowed" : "cursor-pointer"}`}
+            className={`flex items-center justify-center bg-[#272729] p-3 border-solid outline outline-[#3F3F46] h-[42px] w-[42px]
+            ${quantity <= 1 ? "cursor-not-allowed" : "cursor-pointer hover:bg-[#3F3F46] duration-200"}`}
           >
-            -
+            <span className="material-symbols-rounded !text-[20px] text-[#FFFFFF]">remove</span>
           </button>
-          <span className="text-lg min-w-[30px] text-center">
+          <span className="flex items-center w-[80px] justify-center bg-[#000000] p-3 border-solid outline outline-[#27272A] h-[42px] w-[42px]">
             {quantity}
           </span>
           <button
             onClick={handleIncrease}
             disabled={quantity >= item_stock}
-            className={`py-1.5 px-4.5 text-lg
-            ${quantity >= item_stock ? "cursor-not-allowed" : "cursor-pointer"}`}
+            className={`flex items-center justify-center bg-[#272729] p-3 border-solid outline outline-[#3F3F46] h-[42px] w-[42px]
+            ${quantity >= item_stock ? "cursor-not-allowed" : "cursor-pointer hover:bg-[#3F3F46] duration-200"}`}
           >
-            +
+            <span className="material-symbols-rounded !text-[20px] text-[#FFFFFF]">add</span>
           </button>
+          <p className="text-[#71717B]">/ {item_stock}</p>
+          </div>
         </div>
-        
-        {/* Total Cost */}
-        <div>
-          <p className="font-[20px] font-bold">
-            Total: ${total_cost.toLocaleString()}
-          </p>
-        </div>
-        
-        {/* Cancel and Confirm Buttons */}
-        <div className="flex gap-2.5 justify-end">
-          <button
-            onClick={onClose}
-            className="py-2.5 px-5 bg-gray-300 rounded cursor-pointer border-none"
-          >
-            Cancel
-          </button>
-          <button
+
+        <div className="flex flex-col gap-y-4 bg-[#09090B] p-3 border-solid outline outline-[#27272A]">
+            <div className="flex flex-row justify-between items-center">
+                <p className="text-[14px] text-[#71717B] uppercase">TOTAL COST:</p>
+                <p className="text-left text-[24px] font-bold text-[#FF6467]">${total_cost.toLocaleString()}</p>
+            </div>
+            <button
             onClick={handleConfirmPurchase}
-            className="py-2.5 px-5 bg-blue-500 text-white rounded cursor-pointer border-none"
-          >
-            Confirm Purchase
+            className="py-4 w-full text-[20px] font-bold bg-[#E7000B] outline border-solid outline-[#FB2C36] text-white cursor-pointer hover:bg-[#C10007]"
+            >
+            ★ CONFIRM PURCHASE ★
           </button>
         </div>
+
+        <div className="flex flex-row gap-x-2 px-4 py-3 border-solid outline outline-[#82181A]">
+            <span className="material-symbols-rounded !text-[20px] text-[#FF6467]">skull</span>
+            <p className="text-[12px] font-bold">ALL SALES FINAL! NO REFUNDS! NO TRACKING! CRYPTO ONLY!</p>
+        </div>
+
+        <p className="text-[12px] text-[#3F3F46] text-center">By clicking confirm you agree to all terms</p>
+
       </div>
     </div>
   );
