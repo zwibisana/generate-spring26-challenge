@@ -1,0 +1,112 @@
+[
+    {
+      "id": "074224",
+      "item_name": "Polynesian War Club",
+      "item_price": 48000,
+      "item_photo_url": "https://picsum.photos/400/400?random=22",
+      "item_description": "Ceremonial Māori patu made from nephrite jade. Carved handle with traditional patterns. Extreme cultural significance.",
+      "item_stock": 7,
+      "seller_username": "PolynesianPirate",
+      "seller_country": "New Zealand",
+      "seller_city": "Auckland"
+    },
+    {
+      "id": "999217",
+      "item_name": "Greek Bronze Statue",
+      "item_price": 576500,
+      "item_photo_url": "https://picsum.photos/400/400?random=5",
+      "item_description": "Classical period bronze kouros, circa 480 BC. Recovered from Mediterranean shipwreck. Museum-quality patina.",
+      "item_stock": 27,
+      "seller_username": "SteppeNomad_2023",
+      "seller_country": "Kazakhstan",
+      "seller_city": "Almaty"
+    },
+    {
+      "id": "014638",
+      "item_name": "Japanese Samurai Armor",
+      "item_price": 619500,
+      "item_photo_url": "https://picsum.photos/400/400?random=13",
+      "item_description": "Complete Edo period dō-maru armor set. Lacquered iron plates with silk lacing. Family crest intact.",
+      "item_stock": 15,
+      "seller_username": "SteppeNomad_2023",
+      "seller_country": "Kazakhstan",
+      "seller_city": "Almaty"
+    },
+    {
+      "id": "031280",
+      "item_name": "Greek Bronze Statue",
+      "item_price": 252500,
+      "item_photo_url": "https://picsum.photos/400/400?random=5",
+      "item_description": "Classical period bronze kouros, circa 480 BC. Recovered from Mediterranean shipwreck. Museum-quality patina.",
+      "item_stock": 3,
+      "seller_username": "MediterraneanDealer",
+      "seller_country": "Greece",
+      "seller_city": "Athens"
+    },
+    {
+      "id": "571571",
+      "item_name": "Phoenician Glass Vessels",
+      "item_price": 147000,
+      "item_photo_url": "https://picsum.photos/400/400?random=14",
+      "item_description": "Set of three core-formed glass amphorae, circa 500 BC. Rare iridescent patina. Extremely fragile.",
+      "item_stock": 26,
+      "seller_username": "MediterraneanDealer",
+      "seller_country": "Greece",
+      "seller_city": "Athens"
+    },
+    {
+      "id": "794708",
+      "item_name": "Sumerian Clay Tablet",
+      "item_price": 717000,
+      "item_photo_url": "https://picsum.photos/400/400?random=6",
+      "item_description": "Cuneiform tablet containing economic records from Ur, circa 2100 BC. One of the earliest known written documents.",
+      "item_stock": 29,
+      "seller_username": "JungleExplorer_42",
+      "seller_country": "Peru",
+      "seller_city": "Cusco"
+    },
+    {
+      "id": "939057",
+      "item_name": "Etruscan Sarcophagus",
+      "item_price": 371000,
+      "item_photo_url": "https://picsum.photos/400/400?random=18",
+      "item_description": "Terracotta sarcophagus with reclining couple, circa 520 BC. Painted details still visible. Provenance uncertain.",
+      "item_stock": 13,
+      "seller_username": "ArtThief_99",
+      "seller_country": "Hong Kong",
+      "seller_city": "Hong Kong"
+    },
+    {
+      "id": "724515",
+      "item_name": "Japanese Samurai Armor",
+      "item_price": 952500,
+      "item_photo_url": "https://picsum.photos/400/400?random=13",
+      "item_description": "Complete Edo period dō-maru armor set. Lacquered iron plates with silk lacing. Family crest intact.",
+      "item_stock": 7,
+      "seller_username": "NordicAntiques_88",
+      "seller_country": "Norway",
+      "seller_city": "Oslo"
+    },
+    {
+      "id": "466081",
+      "item_name": "Phoenician Glass Vessels",
+      "item_price": 962000,
+      "item_photo_url": "https://picsum.photos/400/400?random=14",
+      "item_description": "Set of three core-formed glass amphorae, circa 500 BC. Rare iridescent patina. Extremely fragile.",
+      "item_stock": 26,
+      "seller_username": "PyramidSchemer",
+      "seller_country": "Mexico",
+      "seller_city": "Mexico City"
+    },
+    {
+      "id": "973250",
+      "item_name": "Sumerian Clay Tablet",
+      "item_price": 257000,
+      "item_photo_url": "https://picsum.photos/400/400?random=6",
+      "item_description": "Cuneiform tablet containing economic records from Ur, circa 2100 BC. One of the earliest known written documents.",
+      "item_stock": 7,
+      "seller_username": "AndeanArtificer",
+      "seller_country": "Bolivia",
+      "seller_city": "La Paz"
+    }
+  ]
