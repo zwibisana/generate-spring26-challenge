@@ -20,7 +20,7 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
   };
 
   return (
-    <div className="">
+    <div>
       <div className="text-center text-[#71717B] bg-[#18181a] py-[6px] text-[12px] tracking-[0.3] font-medium border-solid outline outline-[#27272A]">
         <p>★ LIMITED TIME OFFER ★ ACT FAST ★ ONLY {item.item_stock} LEFT ★</p>
       </div>
@@ -28,7 +28,7 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
       <div className="md:mx-[150px] mx-[50px] mt-12">
 
         {/* Back to Gallery Button */}
-        <div className="flex flex-row inline-flex items-center gap-x-1 p-3 text-[14px] text-[#9F9FA9] bg-[#18181B] outline-[#27272A] border-solid outline"><span className="material-symbols-rounded !text-[16px]">west</span>
+        <div className="flex flex-row inline-flex items-center gap-x-1 p-3 text-[14px] text-[#9F9FA9] bg-[#18181B] outline-[#27272A] border-solid outline hover:text-[#FFFFFF] hover:outline-[#414146] duration-200"><span className="material-symbols-rounded !text-[16px]">west</span>
             <button onClick={onBack} className="uppercase">Back to Deals</button>
         </div>
         
@@ -41,8 +41,8 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
         <div className="flex flex-col lg:flex-row gap-6 mt-6">
 
         {/* Left side: Image + Review */}
-        <div className="flex flex-col items-center md:items-start gap-4">
-            <div className="relative w-full max-w-[400px]">
+        <div className="flex flex-col gap-4 w-full lg:w-1/2">
+            <div className="relative w-full">
                 <img 
                     src={item.item_photo_url} 
                     alt={item.item_name} 
@@ -56,14 +56,18 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
             </div>
 
             {/* Review */}
-            <div className="text-[#71717B] text-[14px] text-center md:text-left">
-                <div>
-                    <span className="material-symbols-rounded !text-[14px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>
-                    <span className="material-symbols-rounded !text-[14px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>
-                    <span className="material-symbols-rounded !text-[14px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>
-                    <span className="material-symbols-rounded !text-[14px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>
-                    <span className="material-symbols-rounded !text-[14px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>
+            <div className="text-[#71717B] text-[14px] text-center p-4 md:text-left bg-[#18181B] border-solid outline outline-[#27272A] w-full">
+                <div className="flex flex-row gap-x-2">
+                    <div>
+                        <span className="material-symbols-rounded !text-[14px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>
+                        <span className="material-symbols-rounded !text-[14px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>
+                        <span className="material-symbols-rounded !text-[14px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>
+                        <span className="material-symbols-rounded !text-[14px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>
+                        <span className="material-symbols-rounded !text-[14px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>
+                    </div>
+                    <p className="text-[12px] text-[#9F9FA9]">4.9/5.0 (2,847 REVIEWS)</p>
                 </div>
+                <p className="italic text-[12px] text-[#71717B]">"Best seller ever!!! Fast shipping no problems!!!!" - Anonymous_Buyer_88</p>
             </div>
         </div>
 
@@ -114,9 +118,9 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
                 </div>
                 
                 <div className="flex gap-4">
-                    <div className="flex flex-col text-[12px] w-full p-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]"><span className="material-symbols-rounded !text-[24px] text-[#71717B]">shield</span>SECURE</div>
-                    <div className="flex flex-col text-[12px] w-full p-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]"><span className="material-symbols-rounded !text-[24px] text-[#71717B]">bolt</span>INSTANT</div>
-                    <div className="flex flex-col text-[12px] w-full p-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]"><span className="material-symbols-rounded !text-[24px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>RATED</div>
+                    <div className="flex flex-col text-[12px] w-full px-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]"><span className="material-symbols-rounded !text-[24px] text-[#71717B]">shield</span>SECURE</div>
+                    <div className="flex flex-col text-[12px] w-full px-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]"><span className="material-symbols-rounded !text-[24px] text-[#71717B]">bolt</span>INSTANT</div>
+                    <div className="flex flex-col text-[12px] w-full px-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]"><span className="material-symbols-rounded !text-[24px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>RATED</div>
                 </div>
 
             </div>
@@ -127,8 +131,30 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
             >
             ★ BUY NOW ★
             </button>
+
+            <div className="flex flex-row gap-x-2 bg-[#18181a] p-4 border-solid outline outline-[#82181A]">
+                <span className="material-symbols-rounded !text-[30px] font-bold text-[#FF6467]">warning</span>
+                <div>
+                    <p className="text-[16px] font-bold text-[#FF6467]">WARNING</p>
+                    <p className="text-[14px] text-[#9F9FA9]">LAST CHANCE! PRICES GOING UP SOON! NO REFUNDS! FINAL SALE!</p>
+                </div>
+            </div>
+
         </div>
 
+        </div>
+
+
+        {/* Bottom Information */}
+        <div className="mt-10 p-6 bg-[#18181B] border-solid outline outline-[#27272A]">
+            <p className="text-[16px] font-bold uppercase mb-4">⚠ Important Info</p>
+            <div className="flex flex-col gap-y-2">
+                <p className="text-[14px] text-[#71717B]">★ BITCOIN/MONERO ONLY - NO REFUNDS</p>
+                <p className="text-[14px] text-[#71717B]">★ ENCRYPTED DELIVERY - UNTRACEABLE</p>
+                <p className="text-[14px] text-[#71717B]">★ NO CONTACT - ANONYMOUS DROPOFF</p>
+                <p className="text-[14px] text-[#71717B]">★ DELETE BROWSER HISTORY AFTER PURCHASE</p>
+                <p className="text-[14px] text-[#71717B]">★ USE TOR BROWSER RECOMMENDED</p>
+            </div>
         </div>
 
 
