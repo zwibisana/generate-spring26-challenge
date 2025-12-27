@@ -25,7 +25,7 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
         <p>★ LIMITED TIME OFFER ★ ACT FAST ★ ONLY {item.item_stock} LEFT ★</p>
       </div>
 
-      <div className="md:mx-[150px] mx-[50px] mt-12">
+      <div className="md:mx-[150px] mx-[30px] mt-12">
 
         {/* Back to Gallery Button */}
         <div className="flex flex-row inline-flex items-center gap-x-1 p-3 text-[14px] text-[#9F9FA9] bg-[#18181B] outline-[#27272A] border-solid outline hover:text-[#FFFFFF] hover:outline-[#414146] duration-200"><span className="material-symbols-rounded !text-[16px]">west</span>
@@ -33,7 +33,7 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
         </div>
         
         {/* Red Text */}
-        <div className="mt-6 bg-[#460a08] py-2 border-solid outline outline-[#82181A] text-[#FF6467] text-[14px]">
+        <div className="mt-6 bg-[#460a08] px-2 py-2 border-solid outline outline-[#82181A] text-[#FF6467] text-[14px]">
             <p className="text-center">⚠ WARNING: 47 PEOPLE VIEWING THIS RIGHT NOW</p>
         </div>
 
