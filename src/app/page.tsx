@@ -94,13 +94,17 @@ function App() {
       <div className="mx-[40px] md:mx-[100px] mt-10 flex flex-col gap-y-10">
         
         {/* Header Block */}
-        <div className="header bg-[#18181B] border border-[#27272A] p-10 rounded-[2px]">
+        <div className="relative header bg-[#18181B] border border-[#27272A] p-10 rounded-[2px]">
           <h1 className="text-left text-[48px] font-bold uppercase tracking-[2.4]">The Dark Vault</h1>
           <h3 className="text-left text-[14px] text-[#71717B] tracking-[1.4]">STOLEN GOODS • NO QUESTIONS ASKED • CRYPTO ONLY</h3>
           <div className="flex flex-wrap gap-3 mt-4">
             <div className="flex items-center gap-1 px-2 py-1 text-[12px] text-[#9F9FA9] bg-[#27272A] outline-[#3F3F46] border-solid outline"><span className="material-symbols-rounded !text-[16px]">shield</span>SECURE</div>
             <div className="flex items-center gap-1 px-2 py-1 text-[12px] text-[#9F9FA9] bg-[#27272A] outline-[#3F3F46] border-solid outline"><span className="material-symbols-rounded !text-[16px]">bolt</span>INSTANT</div>
             <div className="flex items-center gap-1 px-2 py-1 text-[12px] text-[#00C950] bg-[#27272A] outline-[#3F3F46] border-solid outline"><span className="material-symbols-rounded !text-[16px]">visibility</span>3,847 ONLINE</div>
+          </div>
+
+          <div className="absolute top-[-4px] right-[-4px] rotate-[.1rad]">
+            <div className="px-4 py-2 text-[12px] font-bold bg-[#e60010] flex items-center justify-center border-solid outline outline-[#FB2C36]">HOT DEALS</div>
           </div>
         </div>
 

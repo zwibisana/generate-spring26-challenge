@@ -73,6 +73,7 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
 
         {/* Right side: Information */}
         <div className="flex-1 flex flex-col gap-6">
+
             <div className="flex flex-col gap-y-3 p-6 bg-[#18181B] border-solid outline outline-[#27272A]">
                 <h1 className="uppercase text-[24px] font-bold">{item.item_name}</h1>
                 <div className="flex-row flex gap-x-3">
@@ -83,7 +84,11 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
                 <p className="text-[14px] text-[#9F9FA9]">{item.item_description}</p>
             </div>
 
-            <div className="bg-[#18181B] p-4 border-solid outline outline-[#27272A] flex flex-col gap-y-4">
+            <div className="relative bg-[#18181B] p-6 border-solid outline outline-[#27272A] flex flex-col gap-y-4">
+                <div className="absolute top-[-4px] right-[-4px] rotate-[.08rad]">
+                    <div className="px-4 py-1 text-[12px] font-bold bg-[#e60010] flex items-center justify-center border-solid outline outline-[#FB2C36]">HOT DEALS</div>
+                </div>
+                
                 <div className="flex flex-row items-center justify-between pb-6 border-b border-solid border-b-[#27272A]">
                     <p className="text-[14px] text-[#71717B]">PRICE:</p>
                     <div>
