@@ -103,8 +103,8 @@ function App() {
             <div className="flex items-center gap-1 px-2 py-1 text-[12px] text-[#00C950] bg-[#27272A] outline-[#3F3F46] border-solid outline"><span className="material-symbols-rounded !text-[16px]">visibility</span>3,847 ONLINE</div>
           </div>
 
-          <div className="absolute top-[-4px] right-[-4px] rotate-[.1rad]">
-            <div className="px-4 py-2 text-[12px] font-bold bg-[#e60010] flex items-center justify-center border-solid outline outline-[#FB2C36]">HOT DEALS</div>
+          <div className="absolute top-[-4px] right-[-4px] rotate-[.08rad]">
+            <div className="px-4 py-1.5 text-[12px] font-bold bg-[#e60010] flex items-center justify-center border-solid outline outline-[#FB2C36]">HOT DEALS</div>
           </div>
         </div>
 

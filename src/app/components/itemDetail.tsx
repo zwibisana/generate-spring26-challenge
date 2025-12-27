@@ -85,8 +85,8 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
             </div>
 
             <div className="relative bg-[#18181B] p-6 border-solid outline outline-[#27272A] flex flex-col gap-y-4">
-                <div className="absolute top-[-4px] right-[-4px] rotate-[.08rad]">
-                    <div className="px-4 py-1 text-[12px] font-bold bg-[#e60010] flex items-center justify-center border-solid outline outline-[#FB2C36]">HOT DEALS</div>
+                <div className="absolute top-[-5px] right-[-4px] rotate-[.08rad]">
+                    <div className="px-4 py-1.5 text-[12px] font-bold bg-[#e60010] flex items-center justify-center border-solid outline outline-[#FB2C36]">BUY NOW!</div>
                 </div>
                 
                 <div className="flex flex-row items-center justify-between pb-6 border-b border-solid border-b-[#27272A]">
