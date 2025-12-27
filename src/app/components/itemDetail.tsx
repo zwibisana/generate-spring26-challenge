@@ -72,7 +72,7 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
         </div>
 
         {/* Right side: Information */}
-        <div className="flex-1 min-w-[350px] flex flex-col gap-6">
+        <div className="flex-1 flex flex-col gap-6">
             <div className="flex flex-col gap-y-3 p-6 bg-[#18181B] border-solid outline outline-[#27272A]">
                 <h1 className="uppercase text-[24px] font-bold">{item.item_name}</h1>
                 <div className="flex-row flex gap-x-3">
@@ -117,10 +117,10 @@ function ItemDetail({ item, onBack }: ItemDetailProps) {
                     </div>
                 </div>
                 
-                <div className="flex gap-4">
-                    <div className="flex flex-col text-[12px] w-full px-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]"><span className="material-symbols-rounded !text-[24px] text-[#71717B]">shield</span>SECURE</div>
-                    <div className="flex flex-col text-[12px] w-full px-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]"><span className="material-symbols-rounded !text-[24px] text-[#71717B]">bolt</span>INSTANT</div>
-                    <div className="flex flex-col text-[12px] w-full px-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]"><span className="material-symbols-rounded !text-[24px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>RATED</div>
+                <div className="flex flex-wrap gap-4">
+                    <div className="flex flex-col text-[12px] w-full sm:w-auto sm:flex-1 px-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]"><span className="material-symbols-rounded !text-[24px] text-[#71717B]">shield</span>SECURE</div>
+                    <div className="flex flex-col text-[12px] w-full sm:w-auto sm:flex-1 px-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]"><span className="material-symbols-rounded !text-[24px] text-[#71717B]">bolt</span>INSTANT</div>
+                    <div className="flex flex-col text-[12px] w-full sm:w-auto sm:flex-1 px-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]"><span className="material-symbols-rounded !text-[24px] text-[#F0B100]" style={{ fontVariationSettings: "'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24" }}>star</span>RATED</div>
                 </div>
 
             </div>

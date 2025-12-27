@@ -76,9 +76,20 @@ function App() {
 
   return (
     <div>
-      <div className="text-center text-[#71717B] bg-[#18181a] py-[6px] text-[12px] tracking-[0.3] font-medium border-solid outline outline-[#27272A]">
-        <p>*** VERIFIED SELLERS ONLY *** 100% ANONYMOUS *** NO TRACKING *** FAST SHIPPING WORLDWIDE *** HOT DEALS</p>
+      <div className="relative bg-[#18181a] border-solid outline outline-[#27272A]">
+        <div className="absolute top-0 left-0 right-0 flex justify-between px-2 py-1">
+          <div className="flex items-center h-[26px] px-2 text-[12px] text-[#00C950] bg-[#27272A] outline border-solid outline-[#3F3F46]">
+            <span className="material-symbols-rounded !text-[24px] text-[#00C950]">check_small</span>VERIFIED
+          </div>
+          <div className="h-[26px] px-2 text-[12px] font-bold bg-[#e60010] flex items-center justify-center border-solid outline outline-[#FB2C36]">HOT
+          </div>
+        </div>
+
+        <div className="text-center text-[#71717B] py-[6px] text-[12px] tracking-[0.3] font-medium">
+          *** VERIFIED SELLERS ONLY *** 100% ANONYMOUS *** NO TRACKING *** FAST SHIPPING WORLDWIDE *** HOT DEALS
+        </div>
       </div>
+
 
       <div className="mx-[40px] md:mx-[100px] mt-10 flex flex-col gap-y-10">
         
@@ -86,7 +97,7 @@ function App() {
         <div className="header bg-[#18181B] border border-[#27272A] p-10 rounded-[2px]">
           <h1 className="text-left text-[48px] font-bold uppercase tracking-[2.4]">The Dark Vault</h1>
           <h3 className="text-left text-[14px] text-[#71717B] tracking-[1.4]">STOLEN GOODS • NO QUESTIONS ASKED • CRYPTO ONLY</h3>
-          <div className="flex flex-row gap-x-3 mt-4">
+          <div className="flex flex-wrap gap-3 mt-4">
             <div className="flex items-center gap-1 px-2 py-1 text-[12px] text-[#9F9FA9] bg-[#27272A] outline-[#3F3F46] border-solid outline"><span className="material-symbols-rounded !text-[16px]">shield</span>SECURE</div>
             <div className="flex items-center gap-1 px-2 py-1 text-[12px] text-[#9F9FA9] bg-[#27272A] outline-[#3F3F46] border-solid outline"><span className="material-symbols-rounded !text-[16px]">bolt</span>INSTANT</div>
             <div className="flex items-center gap-1 px-2 py-1 text-[12px] text-[#00C950] bg-[#27272A] outline-[#3F3F46] border-solid outline"><span className="material-symbols-rounded !text-[16px]">visibility</span>3,847 ONLINE</div>
