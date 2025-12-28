@@ -1,8 +1,8 @@
 interface ModalOverlayProps {
   children: React.ReactNode;
   /*
-  * Callback to exit out of modal
-  */
+   * Callback to exit out of modal
+   */
   onClose: () => void;
   dimmed?: boolean;
 }

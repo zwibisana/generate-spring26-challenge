@@ -1,12 +1,9 @@
 interface ItemNameCardProps {
-    name: string;
-    description: string;
-  }
+  name: string;
+  description: string;
+}
 
-export function ItemNameCard({
-    name,
-    description,
-  }: ItemNameCardProps) {
+export function ItemNameCard({ name, description }: ItemNameCardProps) {
   return (
     <div className="flex flex-col gap-y-3 p-6 bg-[#18181B] border-solid outline outline-[#27272A]">
       <h1 className="uppercase text-[24px] font-bold">{name}</h1>

@@ -16,7 +16,7 @@ import Reminder from "./Reminder";
  *
  * Displays a pre-confirmation checkout modal where users can
  * adjust quantity and see what their total comes out to.
- * 
+ *
  * What it does:
  * - Render item metadata from stolenItems.json (image, description,
  *   seller, stock, price, etc.)
@@ -32,13 +32,13 @@ interface PurchaseModalProps {
   seller_city: string;
 
   /*
-  * Callback to return user back to item detail
-  */
+   * Callback to return user back to item detail
+   */
   onClose: () => void;
 
   /*
-  * Callback to return user back to item gallery
-  */
+   * Callback to return user back to item gallery
+   */
   onReturnToGallery: () => void;
 }
 

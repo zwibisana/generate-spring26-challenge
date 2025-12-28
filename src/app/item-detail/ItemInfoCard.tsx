@@ -6,7 +6,13 @@ interface ItemInfoCardProps {
   country: string;
 }
 
-export function ItemInfoCard({ price, seller, stock, city, country}: ItemInfoCardProps) {
+export function ItemInfoCard({
+  price,
+  seller,
+  stock,
+  city,
+  country,
+}: ItemInfoCardProps) {
   return (
     <div className="relative bg-[#18181B] p-6 border-solid outline outline-[#27272A] flex flex-col gap-y-4">
       <div className="absolute top-[-5px] right-[-4px] rotate-[.08rad]">

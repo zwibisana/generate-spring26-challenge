@@ -3,7 +3,7 @@
  *
  * Displays a card of detailed information about user's purchase
  * including their item, quantity, total, and order number.
- * 
+ *
  * What it does:
  * - Render item metadata from stolenItems.json (item name)
  * - Allow user to return back to gallery
