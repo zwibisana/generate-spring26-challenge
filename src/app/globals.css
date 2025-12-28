@@ -30,3 +30,13 @@ body {
 html {
   background: #09090b;
 }
+
+.lg-red-button {
+  @apply flex items-center duration-200 justify-center w-full px-1 py-4 text-[20px] font-bold text-white cursor-pointer;
+  background-color: #e7000b;
+  border: 1px solid #fb2c36;
+}
+
+.lg-red-button:hover {
+  background-color: #c10007;
+}
