@@ -77,6 +77,9 @@ export default function PurchaseModal({
     return () => clearInterval(interval);
   }, [showConfirmation, onReturnToGallery]);
 
+  /*
+  * If the purchase is confirmed, render the confirmation modal.
+  */
   if (showConfirmation) {
     return (
       <ModalOverlay onClose={onReturnToGallery} dimmed={false}>
