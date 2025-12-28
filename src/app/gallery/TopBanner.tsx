@@ -19,11 +19,11 @@ export default function TopBanner({
   };
 
   return (
-    <div className="relative bg-[#18181a] outline outline-[#27272A]">
+    <div className="relative bg-[#18181a] outline outline-[1px] outline-[#27272A]">
       <div className="absolute top-0 left-0 right-0 flex justify-between px-2 py-1">
         <div
           onClick={() => handleClick(verifiedId)}
-          className="flex items-center h-[26px] px-2 text-[12px] text-[#00C950] bg-[#27272A] outline outline-[#3F3F46] cursor-pointer hover:bg-[#3F3F46] duration-200"
+          className="flex items-center h-[26px] px-2 text-[12px] text-[#00C950] bg-[#27272A] outline outline-[1px] outline-[#3F3F46] cursor-pointer hover:bg-[#3F3F46] duration-200"
         >
           <span className="material-symbols-rounded !text-[24px]">
             check_small
@@ -32,7 +32,7 @@ export default function TopBanner({
         </div>
         <div
           onClick={() => handleClick(hotId)}
-          className="h-[26px] cursor-pointer px-2 text-[12px] font-bold bg-[#E7000B] flex items-center justify-center outline outline-[#FB2C36] hover:bg-[#C10007]"
+          className="h-[26px] cursor-pointer px-2 text-[12px] font-bold bg-[#E7000B] flex items-center justify-center outline outline-[1px] outline-[#FB2C36] duration-200 hover:bg-[#C10007]"
         >
           HOT
         </div>

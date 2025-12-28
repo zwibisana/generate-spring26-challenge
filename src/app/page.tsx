@@ -45,20 +45,17 @@ function App() {
   const [selectedItem, setSelectedItem] = useState<StolenItem | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
-
-  const handleItemClick = (item: StolenItem) => {
-    setSelectedItem(item);
-  };
-
-  const handleBackToGallery = () => {
-    setSelectedItem(null);
-  };
-
   const totalPages = Math.ceil(stolenItems.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const currentItems = stolenItems.slice(startIndex, endIndex);
+  const handleBackToGallery = () => {
+    setSelectedItem(null);
+  };
 
+  /*
+  * If an item from the gallery is selected, render the selected item detail page.
+  */
   if (selectedItem) {
     return <ItemDetail item={selectedItem} onBack={handleBackToGallery} />;
   }

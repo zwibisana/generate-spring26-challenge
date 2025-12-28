@@ -19,7 +19,7 @@ export function Pagination({
         className={`flex items-center gap-1 py-2 px-5 ${
           currentPage === 1
             ? "bg-[#121214] text-[#272729] cursor-not-allowed"
-            : "bg-[#27272A] border-solid outline outline-[#3F3F46] duration-200 hover:bg-[#3F3F46] cursor-pointer"
+            : "bg-[#27272A] border-solid outline outline-[1px] outline-[#3F3F46] duration-200 hover:bg-[#3F3F46] cursor-pointer"
         }
        `}
       >
@@ -42,8 +42,8 @@ export function Pagination({
           className={`py-2 px-4 cursor-pointer text-[12px]
               ${
                 currentPage === page
-                  ? "bg-[#155DFC] border-solid outline outline-[#2B7FFF] text-white font-bold"
-                  : "bg-[#27272A] border-solid outline outline-[#3F3F46] duration-200 hover:bg-[#3F3F46] cursor-pointer"
+                  ? "bg-[#155DFC] border-solid outline outline-[1px] outline-[#2B7FFF] text-white font-bold"
+                  : "bg-[#27272A] border-solid outline outline-[1px] outline-[#3F3F46] duration-200 hover:bg-[#3F3F46] cursor-pointer"
               }
           `}
         >
@@ -55,7 +55,7 @@ export function Pagination({
         className={`flex items-center gap-1 py-2 px-5 ${
           currentPage === totalPages
             ? "bg-[#121214] text-[#272729] cursor-not-allowed"
-            : "bg-[#27272A] border-solid outline outline-[#3F3F46] duration-200 hover:bg-[#3F3F46] cursor-pointer"
+            : "bg-[#27272A] border-solid outline outline-[1px] outline-[#3F3F46] duration-200 hover:bg-[#3F3F46] cursor-pointer"
         }
               `}
       >

@@ -40,7 +40,7 @@ export function ItemCard({ item, onClick }: ItemCardProps) {
           </div>
         </div>
 
-        <div className="bg-[#09090B] flex items-center justify-between p-[12px] outline border-solid outline-[#27272A]">
+        <div className="bg-[#09090B] flex items-center justify-between p-[12px] outline outline-[1px] border-solid outline-[#27272A]">
           <div>
             <p className="text-left text-[18px] font-bold text-[#FF6467]">
               ${item.item_price.toLocaleString()}
@@ -58,7 +58,7 @@ export function ItemCard({ item, onClick }: ItemCardProps) {
             </p>
           </div>
         </div>
-        <button className="bg-[#272729] duration-200 text-[12px] text-[#9F9FA9] border-solid outline outline-[#3F3F46] uppercase cursor-pointer w-full py-2 hover:bg-[#3F3F46]">
+        <button className="bg-[#272729] duration-200 text-[12px] text-[#9F9FA9] border-solid outline outline-[1px] outline-[#3F3F46] uppercase cursor-pointer w-full py-2 hover:bg-[#3F3F46]">
           VIEW DETAILS
         </button>
       </div>

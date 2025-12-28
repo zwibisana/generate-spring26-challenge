@@ -13,17 +13,17 @@ import { ItemNameCard } from "./ItemNameCard";
 import PurchaseModal from "../purchase-modal/PurchaseModal";
 
 /*
- * ItemDetail
- *
- * Displays a detailed product view for a single stolen item, including
- * pricing, seller information, urgency banners, and purchase flow.
- *
- * What it does:
- * - Render item metadata from stolenItems.json (image, description,
- *   seller, stock, price, etc.)
- * - Handle "Buy Now" interaction and modal visibility
- * - Provide navigation back to the gallery
- */
+* ItemDetail
+*
+* Displays a detailed product view for a single stolen item, including
+* pricing, seller information, urgency banners, and purchase flow.
+*
+* What it does:
+* - Render item metadata from stolenItems.json (image, description,
+*   seller, stock, price, etc.)
+* - Handle "Buy Now" interaction and modal visibility
+* - Provide navigation back to the gallery
+*/
 
 interface ItemDetailProps {
   item: StolenItem;
@@ -37,7 +37,7 @@ export default function ItemDetail({ item, onBack }: ItemDetailProps) {
     <div className="mb-10">
       <Banner stock={item.item_stock} />
 
-      <div className="md:mx-[150px] mx-[30px] mt-12">
+      <div className="md:mx-[150px] mx-[30px] mt-10">
         <BackButton onBack={onBack} />
         <WarningBanner />
 

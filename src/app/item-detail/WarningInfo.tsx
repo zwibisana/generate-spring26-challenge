@@ -1,6 +1,6 @@
 export function WarningInfo() {
   return (
-    <div className="flex flex-row gap-x-2 bg-[#18181a] p-4 border-solid outline outline-[#82181A]">
+    <div className="flex flex-row gap-x-2 bg-[#18181a] p-4 border-solid outline outline-[1px] outline-[#82181A]">
       <span className="material-symbols-rounded !text-[30px] font-bold text-[#FF6467]">
         warning
       </span>

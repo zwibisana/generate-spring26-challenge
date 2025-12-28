@@ -94,7 +94,7 @@ export default function PurchaseModal({
 
   return (
     <ModalOverlay onClose={onClose}>
-      <div className="bg-[#18181a] p-7 w-[448px] outline outline-[#27272A] flex flex-col gap-y-4">
+      <div className="bg-[#18181a] p-7 w-[350px] sm:w-[448px] outline outline-[#27272A] flex flex-col gap-y-4">
         <CheckoutHeader onClose={onClose} />
         <Banner />
         <ItemSummary name={item_name} />

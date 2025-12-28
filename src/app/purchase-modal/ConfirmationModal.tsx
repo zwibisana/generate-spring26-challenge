@@ -27,7 +27,7 @@ export function ConfirmationModal({
   onReturn,
 }: ConfirmationModalProps) {
   return (
-    <div className="bg-[#18181B] p-8 w-[448px] text-center outline outline-[#27272A] flex flex-col gap-y-4">
+    <div className="bg-[#18181B] p-8 w-[350px] sm:w-[448px] text-center outline outline-[#27272A] flex flex-col gap-y-4">
       <span className="material-symbols-rounded !text-[64px] text-[#00C950]">
         task_alt
       </span>

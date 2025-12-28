@@ -14,9 +14,9 @@ export function ItemInfoCard({
   country,
 }: ItemInfoCardProps) {
   return (
-    <div className="relative bg-[#18181B] p-6 border-solid outline outline-[#27272A] flex flex-col gap-y-4">
+    <div className="relative bg-[#18181B] p-6 border-solid outline outline-[1px] outline-[#27272A] flex flex-col gap-y-4">
       <div className="absolute top-[-5px] right-[-4px] rotate-[.08rad]">
-        <div className="px-4 py-1.5 text-[12px] font-bold bg-[#e60010] flex items-center justify-center border-solid outline outline-[#FB2C36]">
+        <div className="px-4 py-1.5 text-[12px] font-bold bg-[#e60010] flex items-center justify-center border-solid outline outline-[1px] outline-[#FB2C36]">
           BUY NOW!
         </div>
       </div>
@@ -33,7 +33,7 @@ export function ItemInfoCard({
         </div>
       </div>
 
-      <div className="flex flex-row gap-x-4 items-center bg-[#09090B] p-3 border-solid outline outline-[#27272A]">
+      <div className="flex flex-row gap-x-4 items-center bg-[#09090B] p-3 border-solid outline outline-[1px] outline-[#27272A]">
         <div>
           <span className="material-symbols-rounded !text-[20px] text-[#52525C]">
             person
@@ -46,7 +46,7 @@ export function ItemInfoCard({
         </div>
       </div>
 
-      <div className="flex flex-row gap-x-4 items-center bg-[#09090B] p-3 border-solid outline outline-[#27272A]">
+      <div className="flex flex-row gap-x-4 items-center bg-[#09090B] p-3 border-solid outline outline-[1px] outline-[#27272A]">
         <div>
           <span className="material-symbols-rounded !text-[20px] text-[#52525C]">
             location_on
@@ -60,7 +60,7 @@ export function ItemInfoCard({
         </div>
       </div>
 
-      <div className="flex flex-row gap-x-4 items-center bg-[#09090B] p-3 border-solid outline outline-[#27272A]">
+      <div className="flex flex-row gap-x-4 items-center bg-[#09090B] p-3 border-solid outline outline-[1px] outline-[#27272A]">
         <div>
           <span className="material-symbols-rounded !text-[20px] text-[#52525C]">
             location_on
@@ -75,19 +75,19 @@ export function ItemInfoCard({
       </div>
 
       <div className="flex flex-wrap gap-4">
-        <div className="flex flex-col text-[12px] w-full sm:w-auto sm:flex-1 px-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]">
+        <div className="flex flex-col text-[12px] w-full sm:w-auto sm:flex-1 px-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[1px] outline-[#27272A]">
           <span className="material-symbols-rounded !text-[24px] text-[#71717B]">
             shield
           </span>
           SECURE
         </div>
-        <div className="flex flex-col text-[12px] w-full sm:w-auto sm:flex-1 px-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]">
+        <div className="flex flex-col text-[12px] w-full sm:w-auto sm:flex-1 px-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[1px] outline-[#27272A]">
           <span className="material-symbols-rounded !text-[24px] text-[#71717B]">
             bolt
           </span>
           INSTANT
         </div>
-        <div className="flex flex-col text-[12px] w-full sm:w-auto sm:flex-1 px-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[#27272A]">
+        <div className="flex flex-col text-[12px] w-full sm:w-auto sm:flex-1 px-6 text-center text-[#71717B] bg-[#09090B] p-3 border-solid outline outline-[1px] outline-[#27272A]">
           <span
             className="material-symbols-rounded !text-[24px] text-[#F0B100]"
             style={{
